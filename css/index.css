@@ -1,0 +1,113 @@
+/* Elvira Ericsson
+// FE23
+//
+// Scrum Board
+// Inlämning 2
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header: rgb(208, 208, 208);
+    --UX: rgb(255, 213, 135);
+    --backend: rgb(255, 208, 255);
+    --frontend: rgb(170, 223, 170);
+    --radius: 10px;
+    --padding: 20px;
+    --margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--header);
+}
+
+h1 {
+    margin: var(--margin);
+
+}
+
+#categories-container {
+    display: flex;
+    margin: var(--margin);
+    gap: 40px;
+}
+
+.all-categories {
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.UX {
+    background-color: var(--UX);
+}
+
+.backend {
+    background-color: var(--backend);
+}
+
+.frontend {
+    background-color: var(--frontend);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.all-task-container {
+    background-color: var(--header);
+    width: 33%;
+    padding: var(--padding);
+    box-sizing: border-box;
+    border-radius: var(--radius);
+}
+
+.assignTask {
+    width: 60%;
+}
+
+.task {
+    background-color: white;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.toDoTask {
+    padding: var(--padding);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
+
+.inProgressDiv {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
+
+.done-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.doneDiv {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+}
