@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./modules/firebase.js" type="module"></script>
+    <script src="./modules/functionalities.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Scrum Board</title>
+</head>
+<body>
+    <header>
+        <h1>Scrum Board</h1>
+        <form id="task-form">
+            <input type="text" placeholder="Enter task" id="enter-task">
+            <select name="task-menu" id="categories">
+                <option value="ux" id="UX-task">UX</option>
+                <option value="dev backend" id="backend-task">Dev Backend</option>
+                <option value="dev frontend" id="frontend-task">Dev Frontend</option>
+            </select>
+            <button type="submit" id="add-button">Add</button>
+        </form>
+        <div id="categories-container">
+            <div class="UX all-categories">UX</div>
+            <div class="backend all-categories">Dev Backend</div>
+            <div class="frontend all-categories">Dev Frontend</div>
+        </div>
+    </header>
+    <main>
+        <div class="to-do-container all-task-container">
+            <h2>To Do</h2>
+        </div>
+        <div class="in-progress-container all-task-container">
+            <h2>In Progress</h2>
+        </div>
+        <div class="done-container all-task-container">
+            <h2>Done</h2>
+            <div class="done-div"></div>
+        </div>
+    </main>
+</body>
+</html>
