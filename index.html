@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./modules/firebase.js" type="module"></script>
-    <script src="./modules/functionalities.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./modules/fetch.js" type="module"></script>
     <link rel="stylesheet" href="./css/index.css">
     <title>Scrum Board</title>
 </head>
@@ -28,15 +28,17 @@
         </div>
     </header>
     <main>
-        <div class="to-do-container all-task-container">
+        <div class="all-task-container">
             <h2>To Do</h2>
+            <div class="to-do-container"></div>
         </div>
-        <div class="in-progress-container all-task-container">
+        <div class="all-task-container">
             <h2>In Progress</h2>
+            <div class="in-progress-container"></div>
         </div>
-        <div class="done-container all-task-container">
+        <div class="all-task-container">
             <h2>Done</h2>
-            <div class="done-div"></div>
+            <div class="done-container"></div>
         </div>
     </main>
 </body>

@@ -44,15 +44,15 @@ h1 {
     border-radius: var(--radius);
 }
 
-.UX {
+.UX, .dev-ux {
     background-color: var(--UX);
 }
 
-.backend {
+.backend, .dev-backend {
     background-color: var(--backend);
 }
 
-.frontend {
+.frontend, .dev-frontend {
     background-color: var(--frontend);
 }
 
@@ -64,7 +64,8 @@ main {
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .all-task-container {
@@ -75,39 +76,9 @@ h2 {
     border-radius: var(--radius);
 }
 
-.assignTask {
-    width: 60%;
-}
-
-.task {
-    background-color: white;
-    padding: var(--padding);
-    border-radius: var(--radius);
-}
-
-.toDoTask {
+.taskDiv {
     padding: var(--padding);
     border-radius: var(--radius);
     margin-bottom: 10px;
 }
 
-.inProgressDiv {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding);
-    border-radius: var(--radius);
-    margin-bottom: 10px;
-}
-
-.done-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.doneDiv {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding);
-    border-radius: var(--radius);
-    margin-bottom: 10px;
-}
