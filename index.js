@@ -22,6 +22,7 @@ form.addEventListener('submit', event => {
         assigned: "none"
     }
     console.log(taskData);
+    console.log('Task added!')
     form.reset();
 
     postTasks(taskData)
@@ -42,6 +43,7 @@ containerForTasks.addEventListener('submit', event => {
         assigned: assigned,
         status: 'in progress'
     }
+    console.log('Task assigned!')
 
     patchTaskInProgress(id, assignedTask)
         .then(removeFormerTasks)
@@ -60,6 +62,8 @@ containerForInProgress.addEventListener('click', event => {
         const doneTask = {
             status: 'done'
         }
+
+        console.log('Task completed!')
 
         patchTaskDone(id, doneTask)
             .then(removeFormerTasks)
@@ -80,6 +84,8 @@ containerForDone.addEventListener('click', event => {
             .then(getTasks)
             .then(displayTasks)
     }
+    console.log('Task removed!')
+
 })
 
 getTasks().then(displayTasks);

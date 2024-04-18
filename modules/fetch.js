@@ -11,17 +11,9 @@ async function getTasks() {
         headers: header
     }
 
-    try {
-        const response = await fetch(url, options);
-        if (response.ok) {
-            console.log('getting tasks');
-        }
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.log(error);
-    }
-    
+    const response = await fetch(url, options);
+    const data = await response.json();
+    return data;
 }
 
 
